@@ -1,0 +1,45 @@
+<nav
+  class="h-16 bg-gradient-to-br from-red-950/40 via-transparent to-red-950/50 text-white shadow-md shadow-slate-600/40"
+>
+  <div
+    class="flex items-center justify-between px-6 container w-full h-full mx-auto"
+  >
+    <!-- Brand -->
+    <a href="/" class="md:hidden text-xl font-bold">Strahd Is Here!</a>
+
+    <!-- Hamburger Menu -->
+    <input type="checkbox" id="menu-toggle" class="hidden peer" />
+    <label
+      for="menu-toggle"
+      class="cursor-pointer flex flex-col gap-1.5 md:hidden"
+    >
+      <span class="block w-6 h-0.5 bg-white"></span>
+      <span class="block w-6 h-0.5 bg-white"></span>
+      <span class="block w-6 h-0.5 bg-white"></span>
+    </label>
+
+    <!-- Menu -->
+    <ul
+      class="absolute top-16 left-0 z-50 p-4 backdrop-blur-sm w-full bg-red-950/90 text-center flex-col gap-6 text-xl hidden peer-checked:flex md:static md:flex md:flex-row md:gap-8 md:w-auto md:bg-transparent md:items-center"
+    >
+      <li>
+        <a class="hover:text-red-600 transition-colors" href="/">Inicio</a>
+      </li>
+      <li>
+        <a class="hover:text-red-600 transition-colors" href="/pcs"
+          >Protagonistas</a
+        >
+      </li>
+      <li>
+        <a class="hover:text-red-600 transition-colors" href="/npcs">NPCs</a>
+      </li>
+      <li>
+        <a class="hover:text-red-600 transition-colors" href="/areas">Zonas</a>
+      </li>
+      <li>
+        <a class="hover:text-red-600 transition-colors" href="/lore">Historia</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>

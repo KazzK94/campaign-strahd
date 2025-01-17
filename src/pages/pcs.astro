@@ -1,0 +1,15 @@
+---
+import CharacterCard from "../components/CharacterCard.astro";
+import Layout from "../layouts/Layout.astro";
+// PCs = Player Characters (cards)
+---
+
+<Layout>
+  <section
+    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+  >
+    <CharacterCard name="Ayla Majere" src="/characters/players/ayla.png" />
+    <CharacterCard name="Diago" src="/characters/players/diago.jpg" />
+    <CharacterCard name="Ava Nescient" src="/characters/players/ava.jpg" />
+  </section>
+</Layout>

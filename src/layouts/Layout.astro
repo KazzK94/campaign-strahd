@@ -1,22 +1,28 @@
+---
+import Navbar from "../components/Navbar.astro";
+---
+
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>La Maldición de Strahd (por Corven Dallas)</title>
+  </head>
+  <body
+    class="min-h-svh bg-black bg-gradient-to-b from-black via-black to-red-900/15 text-white"
+  >
+    <Navbar />
+    <main class="container mx-auto p-4">
+      <slot />
+    </main>
+  </body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
 </style>

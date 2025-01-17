@@ -1,11 +1,50 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <div class="relative md:[aspect-ratio:24/11] rounded-xl overflow-hidden">
+    <img
+      class="h-full w-full object-cover absolute inset-0 -z-10"
+      src="/strahds-curse-wallpaper.png"
+      alt="Strahd's Curse Wallpaper"
+    />
+
+    <div class="w-full h-full bg-black/20 relative">
+      <div
+        class="absolute bottom-12 left-12 min-w-[40%] flex flex-col justify-center text-center"
+      >
+        <h1 class="text-5xl font-bold mb-1.5">La Maldición de Strahd</h1>
+        <p class="text-xl">Una aventura mastereada por Corven Dallas</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 mt-4 gap-3">
+          <a
+            href="/pcs"
+            class="bg-red-800 border-2 border-red-950 text-lg text-center py-4 rounded-lg shadow-md hover:bg-red-900 transition-all duration-300"
+          >
+            Ver Personajes
+          </a>
+          <a
+            href="/npcs"
+            class="bg-red-800 border-2 border-red-950 text-lg text-center py-4 rounded-lg shadow-md hover:bg-red-900 transition-all duration-300"
+          >
+            Ver PNJs
+          </a>
+          <!-- faltan areas y lore -->
+          <a
+            href="/areas"
+            class="bg-red-800 border-2 border-red-950 text-lg text-center py-4 rounded-lg shadow-md hover:bg-red-900 transition-all duration-300"
+          >
+            Ver Zonas
+          </a>
+          <a
+            href="/lore"
+            class="bg-red-800 border-2 border-red-950 text-lg text-center py-4 rounded-lg shadow-md hover:bg-red-900 transition-all duration-300"
+          >
+            Ver Historia
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </Layout>
