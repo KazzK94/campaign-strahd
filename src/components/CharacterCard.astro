@@ -2,7 +2,7 @@
 const { name, src } = Astro.props
 ---
 
-<article class="rounded-lg relative borde shadow-md shadow-red-200/20 overflow-hidden hover:scale-105 hover:saturate-150 transition-all duration-300">
+<article class="group rounded-lg relative borde shadow-md shadow-red-200/20 overflow-hidden hover:scale-105 hover:saturate-150 transition-all duration-300">
 	<img
 	  class="w-full h-full object-cover"
 	  src={src}
@@ -11,6 +11,6 @@ const { name, src } = Astro.props
 	<div
 	  class="absolute inset-0 flex justify-center items-end pb-4 bg-gradient-to-t from-black via-transparent to-transparent"
 	>
-	  <h2 class="text-red-200 text-2xl font-bold">{name}</h2>
+	  <h2 class="text-red-300 group-hover:text-red-600 transition-colors duration-500 text-2xl font-bold">{name}</h2>
 	</div>
   </article>
