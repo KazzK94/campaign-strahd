@@ -12,7 +12,7 @@ import Navbar from "../components/Navbar.astro";
     <title>La Maldición de Strahd (por Corven Dallas)</title>
   </head>
   <body
-    class="h-svh bg-black bg-gradient-to-b from-black via-black to-red-900/15 text-white"
+    class="h-svh bg-black bg-gradient-to-br from-black via-black to-red-900/50 text-white"
   >
     <div class="h-full grid grid-rows-[auto_1fr]">
       <Navbar />
@@ -27,4 +27,8 @@ import Navbar from "../components/Navbar.astro";
   @tailwind base;
   @tailwind components;
   @tailwind utilities;
+  
+  @view-transition {
+    navigation: auto;
+  }
 </style>

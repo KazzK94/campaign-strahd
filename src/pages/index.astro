@@ -3,84 +3,54 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <div class="relative md:[aspect-ratio:24/11] rounded-xl overflow-hidden">
+  <div class="md:relative h-full">
     <img
-      class="h-full w-full object-cover absolute inset-0 -z-10"
+      class="hidden md:block h-full w-full object-cover absolute inset-0 -z-10"
       src="/strahds-curse-wallpaper.png"
       alt="Strahd's Curse Wallpaper"
     />
 
     <div class="w-full h-full bg-black/20 relative">
       <div
-        class="absolute bottom-12 left-12 min-w-[40%] flex flex-col justify-center text-center"
+        class="mt-4 px-2 md:mt-0 md:px-0 md:absolute bottom-12 left-12 min-w-[40%] flex flex-col justify-center text-center"
       >
-        <h1 class="text-5xl font-bold mb-1.5">La Maldición de Strahd</h1>
-        <p class="text-xl">Una aventura mastereada por Corven Dallas</p>
+        <h1 class="text-3xl md:text-5xl font-bold mb-1.5">
+          La Maldición de Strahd
+        </h1>
+        <p class="text-lg md:text-xl italic">
+          Una aventura mastereada por <strong
+            class="text-red-400/80 font-semibold">Corven Dallas</strong>
+        </p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 mt-4 gap-3">
+        <div
+          class="container mx-auto grid grid-cols-1 sm:grid-cols-2 mt-4 gap-1.5 md:gap-3"
+        >
           <a
             href="/pcs"
-            class="bg-red-800 border-2 border-red-950 text-lg text-center py-4 rounded-lg shadow-md hover:bg-red-900 transition-all duration-300"
+            class="bg-red-800 border-2 border-red-950 text-lg text-center py-3 md:py-4 rounded-lg shadow-md hover:bg-red-900 transition-all duration-300"
           >
             Ver Personajes
           </a>
           <a
             href="/npcs"
-            class="bg-red-800 border-2 border-red-950 text-lg text-center py-4 rounded-lg shadow-md hover:bg-red-900 transition-all duration-300"
+            class="bg-red-800 border-2 border-red-950 text-lg text-center py-3 md:py-4 rounded-lg shadow-md hover:bg-red-900 transition-all duration-300"
           >
             Ver NPCs
           </a>
           <a
             href="/areas"
-            class="bg-red-800 border-2 border-red-950 text-lg text-center py-4 rounded-lg shadow-md hover:bg-red-900 transition-all duration-300"
+            class="bg-red-800 border-2 border-red-950 text-lg text-center py-3 md:py-4 rounded-lg shadow-md hover:bg-red-900 transition-all duration-300"
           >
             Ver Zonas
           </a>
           <a
             href="/lore"
-            class="bg-red-800 border-2 border-red-950 text-lg text-center py-4 rounded-lg shadow-md hover:bg-red-900 transition-all duration-300"
+            class="bg-red-800 border-2 border-red-950 text-lg text-center py-3 md:py-4 rounded-lg shadow-md hover:bg-red-900 transition-all duration-300"
           >
             Ver Historia
           </a>
         </div>
       </div>
-    </div>
-  </div>
-
-
-  <!-- TODO: Remove this hotfix -->
-  <div class="md:hidden">
-    <div class="w-full h-full bg-black/20 relative">
-        <h1 class="text-3xl font-bold mb-1.5 text-center text-pretty">La Maldición de Strahd</h1>
-        <p class="text-base text-center italic text-pretty">Una aventura mastereada por Corven Dallas</p>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 mt-4 gap-3">
-          <a
-            href="/pcs"
-            class="bg-red-800 border-2 border-red-950 text-lg text-center py-4 rounded-lg shadow-md hover:bg-red-900 transition-all duration-300"
-          >
-            Ver Personajes
-          </a>
-          <a
-            href="/npcs"
-            class="bg-red-800 border-2 border-red-950 text-lg text-center py-4 rounded-lg shadow-md hover:bg-red-900 transition-all duration-300"
-          >
-            Ver PNJs
-          </a>
-          <!-- faltan areas y lore -->
-          <a
-            href="/areas"
-            class="bg-red-800 border-2 border-red-950 text-lg text-center py-4 rounded-lg shadow-md hover:bg-red-900 transition-all duration-300"
-          >
-            Ver Zonas
-          </a>
-          <a
-            href="/lore"
-            class="bg-red-800 border-2 border-red-950 text-lg text-center py-4 rounded-lg shadow-md hover:bg-red-900 transition-all duration-300"
-          >
-            Ver Historia
-          </a>
-        </div>
     </div>
   </div>
 </Layout>
