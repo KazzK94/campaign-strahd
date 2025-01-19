@@ -23,7 +23,8 @@ export default [
 	{
 		name: "Padre Donavich",
 		description: "Padre del clérigo Dushan, ya difunto, no llegasteis a conocerle.",
-		image: "/characters/npcs/father_donavich.jpg"
+		image: "/characters/npcs/father_donavich.jpg",
+		isDead: true
 	},
 	{
 		name: "Strahd von Zarovich",

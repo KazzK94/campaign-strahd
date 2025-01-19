@@ -1,9 +1,11 @@
 ---
-const { name, src, description } = Astro.props;
+import SkullIcon from '../assets/icons/SkullIcon.astro'
+
+const { name, src, description, isDead = false } = Astro.props;
 ---
 
 <article
-  class="group rounded-lg relative border-2 border-rose-900/60 shadow-md shadow-red-200/20 overflow-hidden hover:scale-105 hover:saturate-150 transition-all duration-300"
+  class="group rounded-lg relative border-2 border-rose-800/60 shadow-md shadow-red-200/20 overflow-hidden hover:scale-105 hover:saturate-150 transition-all duration-300"
 >
   <img
     class="w-full h-full object-cover [aspect-ratio:1/1]"
@@ -25,6 +27,13 @@ const { name, src, description } = Astro.props;
         <p class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-24 group-hover:opacity-100 transition-all duration-300 ease-in-out text-gray-200 text-sm">
           {description}
         </p>
+      )
+    }
+    {
+      isDead && (
+        <div class="absolute top-2 right-2">
+          <SkullIcon class="size-12 text-rose-900 rounded-full bg-black/10" />
+        </div>
       )
     }
   </div>
