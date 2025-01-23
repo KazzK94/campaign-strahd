@@ -53,6 +53,10 @@ export default {
 				text: 'Una misteriosa niebla comenzó a rodear el camino, casi como indicándoles por dónde debían ir para continuar. Este camino terminaba en un gran portón que aparentemente estaba cerrado. Al mismo tiempo, unos aullidos de lobos se escuchaban en la otra dirección. Tratando de evitar el encuentro, el grupo abandonó el carro que portaba la caja y avanzó hasta la puerta y, después de un fútil intento de abrirla de modos absurdos y con impactos arcanos, la paladina tomó el liderazgo y simplemente… empujó. Así la puerta se abrió en un instante y los cinco pasaron al otro lado, viendo como esta se cerraba tras de sí de forma brusca, y al momento se reparaba de los daños que acababa de sufrir. Ava mencionó que había notado una distorsión como si el propio tiempo hubiese vuelto hacia atrás para esa puerta.'
 			},
 			{
+				title: 'Bailando con(tra) lobos',
+				text: 'La escena que descubren dentro no es menos peligrosa. Se han librado las bestias del camino, pero dentro un hombre lidia una batalla con otro grupo de 5-6 lobos que le rodea. El combate no tiene el mejor comienzo para los aventureros, los primeros golpes son fallidos o débiles por su parte, el kenku acaba derribado y el monje queda en el punto de mira de uno de los lobos. Pero pronto remontan la lucha a su favor y logran ayudar al hombre que combatía a los lobos en primera instancia, acabando además entre el pícaro y la bruja con los lobos que pretendían huir del combate.'
+			},
+			{
 				title: 'CONTINUARÁ...',
 				text: '(Sección en proceso)'
 			}

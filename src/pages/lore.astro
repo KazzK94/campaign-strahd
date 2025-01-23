@@ -1,50 +1,35 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import lore from "../data/lore.ts";
+
+const chapters = [lore.prologue, lore.chapter1];
 ---
 
 <Layout>
-  <section class="container mx-auto mt-4 p-3 space-y-3">
-    <details class="bg-red-900 rounded-lg cursor-pointer">
-      <summary class="text-pretty p-4 text-xl font-semibold">
-        {lore.prologue.title}
-      </summary>
-      <hr class="mx-2" />
-      <div class="space-y-2 py-2 pb-3">
-        {
-          lore.prologue.content.map((section) => {
-            return (
-              <div class="px-4">
-                <h2 class="text-pretty font-semibold text-lg">
-                  {section.title}
-                </h2>
-                <p class="text-pretty">{section.text}</p>
-              </div>
-            );
-          })
-        }
-      </div>
-    </details>
-
-    <details class="bg-red-900 rounded-lg cursor-pointer">
-      <summary class="text-pretty p-4 text-xl font-semibold">
-        {lore.chapter1.title}
-      </summary>
-      <hr class="mx-2" />
-      <div class="space-y-2 py-2 pb-3">
-        {
-          lore.chapter1.content.map((section) => {
-            return (
-              <div class="px-4">
-                <h2 class="text-pretty font-semibold text-lg">
-                  {section.title}
-                </h2>
-                <p class="text-pretty">{section.text}</p>
-              </div>
-            );
-          })
-        }
-      </div>
-    </details>
+  <section class="container mx-auto mt-4 p-3 space-y-3 lg:max-w-[800px]">
+    {
+      chapters.map((chapter) => {
+        return (
+          <details class="bg-red-900 rounded-lg cursor-pointer">
+            <summary class="text-pretty p-4 text-xl font-semibold">
+              {chapter.title}
+            </summary>
+            <hr class="mx-2" />
+            <div class="space-y-2 py-2.5 pb-3">
+              {chapter.content.map((section) => {
+                return (
+                  <div class="px-5">
+                    <h2 class="text-pretty font-semibold text-lg">
+                      {section.title}
+                    </h2>
+                    <p class="text-pretty">{section.text}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </details>
+        );
+      })
+    }
   </section>
 </Layout>
