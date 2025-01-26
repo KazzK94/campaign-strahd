@@ -1,10 +1,6 @@
 
 export default [
-	{
-		name: "Arik Lorensk",
-		description: "El camarero de \"La Sangre en(de) la Viña\", no parece prestar mucha atención, pero vende un pastel de frambuesa muy rico.",
-		image: "/characters/npcs/arik_lorensk.jpg"
-	},
+
 	{
 		name: "Dushan",
 		description: "Es el hijo del Padre Donavich, ambos clérigos de la iglesia del Señor de la Mañana.",
@@ -17,24 +13,24 @@ export default [
 		isDead: true
 	},
 	{
-		name: "(¿) Hijo del Padre Donavich (?)",
+		name: "???? (hijo del Padre Donavich)",
 		description: "El hijo del Padre Donovich. Estaba encerrado en el sótano de la iglesia porque se estaba transformando en vampiro. Se dice que ha escapado y ha matado a su padre...",
 		image: "/characters/npcs/mystery_npc.jpg",
 		isVampire: true
 	},
 	{
 		name: "Ismark \"el menor\" Kolyanovich",
-		description: "Ismark es ahora el nuevo burgomaestre de Barovia.",
+		description: "El nuevo burgomaestre de Barovia, tras la muerte de su padre Kolyan Indirovich.",
 		image: "/characters/npcs/ismark_kolyanovich.jpg"
 	},
 	{
 		name: "Ireena Kolyana",
-		description: "Ireena es la hija del anterior burgomaestre de Barovia, Kolyan Indirovich.",
+		description: "La hermana de Ismark e hija del anterior burgomaestre Kolyan Indirovich.",
 		image: "/characters/npcs/ireena_kolyana.jpg"
 	},
 	{
 		name: "Kolyan Indirovich",
-		description: "Difunto Burgomaestre, padre de Ismark e Ireena.",
+		description: "Difunto Burgomaestre, padre de Ismark e Ireena. Murió en la noche de la llegada de los aventureros a Barovia.",
 		image: "/characters/npcs/kolyan_indirovich.jpg",
 		isDead: true
 	},
@@ -42,6 +38,11 @@ export default [
 		name: "Strahd von Zarovich",
 		description: "Un vampiro con mucha influencia en Barovia. Se rumorea que un druida convocó el poder de las estrellas para chamuscarle la mano.",
 		image: "/characters/npcs/strahd_von_zarovich.jpg"
+	},
+	{
+		name: "Arik Lorensk",
+		description: "El camarero de \"La Sangre en(de) la Viña\", no parece prestar mucha atención, pero vende un pastel de frambuesa muy rico.",
+		image: "/characters/npcs/arik_lorensk.jpg"
 	},
 	{
 		name: "Alenka, Mirabel y Sorvia",
