@@ -13,7 +13,7 @@ export default [
 		isDead: true
 	},
 	{
-		name: "???? (hijo del Padre Donavich)",
+		name: "Doru",
 		description: "El hijo del Padre Donovich. Estaba encerrado en el sótano de la iglesia porque se estaba transformando en vampiro. Se dice que ha escapado y se sospecha que haya matado a su padre...",
 		image: "/characters/npcs/mystery_npc.jpg",
 		isVampire: true
