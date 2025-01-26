@@ -7,8 +7,20 @@ export default [
 	},
 	{
 		name: "Dushan",
-		description: "Es el hijo del padre Donavich, ambos clérigos de la iglesia del Señor de la Mañana.",
+		description: "Es el hijo del Padre Donavich, ambos clérigos de la iglesia del Señor de la Mañana.",
 		image: "/characters/npcs/dushan.jpg"
+	},
+	{
+		name: "Padre Donavich",
+		description: "Padre del clérigo Dushan, ya difunto, no llegasteis a conocerle.",
+		image: "/characters/npcs/father_donavich.jpg",
+		isDead: true
+	},
+	{
+		name: "(¿) Hijo del Padre Donavich (?)",
+		description: "El hijo del Padre Donovich. Estaba encerrado en el sótano de la iglesia porque se estaba transformando en vampiro. Se dice que ha escapado y ha matado a su padre...",
+		image: "/characters/npcs/mystery_npc.jpg",
+		isVampire: true
 	},
 	{
 		name: "Ismark \"el menor\" Kolyanovich",
@@ -21,9 +33,9 @@ export default [
 		image: "/characters/npcs/ireena_kolyana.jpg"
 	},
 	{
-		name: "Padre Donavich",
-		description: "Padre del clérigo Dushan, ya difunto, no llegasteis a conocerle.",
-		image: "/characters/npcs/father_donavich.jpg",
+		name: "Kolyan Indirovich",
+		description: "Difunto Burgomaestre, padre de Ismark e Ireena.",
+		image: "/characters/npcs/kolyan_indirovich.jpg",
 		isDead: true
 	},
 	{
