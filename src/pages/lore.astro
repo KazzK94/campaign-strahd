@@ -15,14 +15,14 @@ const chapters = [lore.prologue, lore.chapter1];
               {chapter.title}
             </summary>
             <hr class="mx-2" />
-            <div class="space-y-2 py-2.5 pb-3">
+            <div class="space-y-3.5 py-3">
               {chapter.content.map((section) => {
                 return (
                   <div class="px-5">
                     <h2 class="text-pretty font-semibold text-lg">
                       {section.title}
                     </h2>
-                    <p class="text-pretty">{section.text}</p>
+                    <p class="text-pretty text-base">{section.text}</p>
                   </div>
                 );
               })}
