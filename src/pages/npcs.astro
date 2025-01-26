@@ -11,7 +11,7 @@ import npcs from '../data/npcs';
   >
 	{
 		npcs.map(npc => (
-			<CharacterCard name={npc.name} src={npc.image} description={npc.description} isDead={npc.isDead} />
+			<CharacterCard name={npc.name} src={npc.image} description={npc.description} isDead={npc.isDead} isVampire={npc.isVampire} />
 		))
 	}
   </section>

@@ -1,24 +1,25 @@
 ---
+import BatIcon from '../assets/icons/BatIcon.astro'
 import SkullIcon from '../assets/icons/SkullIcon.astro'
 
-const { name, src, description, isDead = false } = Astro.props;
+const { name, src, description, isDead = false, isVampire = false } = Astro.props;
 ---
 
 <article
-  class="group rounded-lg relative border-2 border-rose-800/60 shadow-md shadow-red-200/20 overflow-hidden hover:scale-105 hover:saturate-150 transition-all duration-300"
+  class="group rounded-lg relative border-2 border-rose-800/60 shadow-md shadow-red-200/20 overflow-hidden hover:scale-105 transition-all duration-300"
 >
   <img
-    class="w-full h-full object-cover [aspect-ratio:1/1]"
+    class="w-full h-full object-cover [aspect-ratio:1/1] hover:saturate-150"
     src={src}
     alt={`Imagen de ${name}`}
   />
   <div
-    class={`absolute inset-0 text-center px-2 flex flex-col justify-end items-center pb-4 bg-gradient-to-t from-black via-black/10 ${
-      description && "group-hover:via-black/80"
+    class={`absolute inset-0 text-center px-2 flex flex-col justify-end items-center pb-4 bg-gradient-to-t from-black via-transparent to-transparent ${
+      description && "group-hover:via-black/30"
     } to-transparent`}
   >
     <h2
-      class="text-red-500 group-hover:text-red-700 transition-colors duration-300 text-2xl font-bold"
+      class="text-red-500 group-hover:text-red-600 transition-colors duration-300 text-2xl font-bold"
     >
       {name}
     </h2>
@@ -32,9 +33,17 @@ const { name, src, description, isDead = false } = Astro.props;
     {
       isDead && (
         <div class="absolute top-2 right-2">
-          <SkullIcon class="size-12 text-rose-900 rounded-full bg-black/10" />
+          <SkullIcon class="size-16 text-red-700 group-hover:text-red-800 rounded-full bg-black/5 backdrop-blur-sm" />
         </div>
       )
     }
+	
+    {
+		isVampire && (
+		  <div class="absolute top-2 right-2">
+			<BatIcon strokeWidth="1.5" class="size-16 p-1 text-purple-700 rounded-full bg-black/5 backdrop-blur-sm" />
+		  </div>
+		)
+	  }
   </div>
 </article>
