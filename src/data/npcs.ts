@@ -37,7 +37,8 @@ export default [
 	{
 		name: "Strahd von Zarovich",
 		description: "Un vampiro con mucha influencia en Barovia. Se rumorea que un druida convocó el poder de las estrellas para chamuscarle la mano.",
-		image: "/characters/npcs/strahd_von_zarovich.jpg"
+		image: "/characters/npcs/strahd_von_zarovich.jpg",
+		isVampire: true
 	},
 	{
 		name: "Arik Lorensk",

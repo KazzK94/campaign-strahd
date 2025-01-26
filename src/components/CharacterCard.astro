@@ -1,15 +1,22 @@
 ---
-import BatIcon from '../assets/icons/BatIcon.astro'
-import SkullIcon from '../assets/icons/SkullIcon.astro'
+import BatIcon from "../assets/icons/BatIcon.astro";
+import SkullIcon from "../assets/icons/SkullIcon.astro";
+import VampireIcon from "../assets/icons/VampireIcon.astro";
 
-const { name, src, description, isDead = false, isVampire = false } = Astro.props;
+const {
+  name,
+  src,
+  description,
+  isDead = false,
+  isVampire = false,
+} = Astro.props;
 ---
 
 <article
   class="group rounded-lg relative border-2 border-rose-800/60 shadow-md shadow-red-200/20 overflow-hidden hover:scale-105 transition-all duration-300"
 >
   <img
-    class="w-full h-full object-cover [aspect-ratio:1/1] hover:saturate-150"
+    class={`w-full h-full object-cover [aspect-ratio:1/1] hover:saturate-150 ${isDead && "saturate-[0.15]"} ${isVampire && "saturate-[0.75]"}`}
     src={src}
     alt={`Imagen de ${name}`}
   />
@@ -33,17 +40,19 @@ const { name, src, description, isDead = false, isVampire = false } = Astro.prop
     {
       isDead && (
         <div class="absolute top-2 right-2">
-          <SkullIcon class="size-16 text-red-700 group-hover:text-red-800 rounded-full bg-black/5 backdrop-blur-sm" />
+          <SkullIcon class="size-16 p-1 text-gray-300 group-hover:text-gray-100 rounded-full bg-black/10 backdrop-blur-smtransition-colors duration-300" />
         </div>
       )
     }
-	
+
     {
-		isVampire && (
-		  <div class="absolute top-2 right-2">
-			<BatIcon strokeWidth="1.5" class="size-16 p-1 text-purple-700 rounded-full bg-black/5 backdrop-blur-sm" />
-		  </div>
-		)
-	  }
+      isVampire && (
+        <div class="absolute top-2 right-2">
+          <VampireIcon
+            class="size-16 p-1 pt-2 text-red-500 group-hover:text-red-600/80 rounded-full bg-black/5 backdrop-blur-sm transition-colors duration-300"
+          />
+        </div>
+      )
+    }
   </div>
 </article>
