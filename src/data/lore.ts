@@ -46,7 +46,7 @@ export default {
 		content: [
 			{
 				title: 'La caja y el rubí',
-				text: 'Tras el extraño encuentro con el extraño ser, que desapareció tal y como había llegado, el grupo recibió la caja y el rubí. Pterox optó por abrir la caja, encontrando allí una trampa que llegó a herirle a él y a algunos de sus compañeros mediante una descarga de rayos, pero a su vez allí encontraron armas de plata para todos los integrantes del grupo. En cuanto al rubí, Ava se ofreció como portadora del mismo, mientras sus ojos brillaban como si fuese una niña pequeña que había encontrado su juguete favorito.'
+				text: 'Tras el extraño encuentro con el extraño ser, que desapareció tal y como había llegado, el grupo recibió la caja y el rubí. Pterox optó por abrir la caja, encontrando allí una trampa que llegó a herirle a él y a algunos de sus compañeros mediante una descarga de rayos, pero a su vez allí encontraron armas de plata que se quedaron los integrantes del grupo. En cuanto al rubí, Ava se ofreció como portadora del mismo, mientras sus ojos brillaban como si fuese una niña pequeña que había encontrado su juguete favorito.'
 			},
 			{
 				title: 'Las puertas de Barovia',
