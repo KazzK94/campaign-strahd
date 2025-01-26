@@ -14,7 +14,7 @@ export default [
 	},
 	{
 		name: "???? (hijo del Padre Donavich)",
-		description: "El hijo del Padre Donovich. Estaba encerrado en el sótano de la iglesia porque se estaba transformando en vampiro. Se dice que ha escapado y ha matado a su padre...",
+		description: "El hijo del Padre Donovich. Estaba encerrado en el sótano de la iglesia porque se estaba transformando en vampiro. Se dice que ha escapado y se sospecha que haya matado a su padre...",
 		image: "/characters/npcs/mystery_npc.jpg",
 		isVampire: true
 	},
