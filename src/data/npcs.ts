@@ -15,7 +15,7 @@ export default [
 	{
 		name: "Doru",
 		description: "El hijo del Padre Donovich. Estaba encerrado en el sótano de la iglesia porque se estaba transformando en vampiro. Se dice que ha escapado y se sospecha que haya matado a su padre...",
-		image: "/characters/npcs/mystery_npc.jpg",
+		image: "/characters/npcs/doru.jpg",
 		isVampire: true
 	},
 	{
@@ -49,5 +49,10 @@ export default [
 		name: "Alenka, Mirabel y Sorvia",
 		description: "Las tres hermanas Vistani que gerentan la taberna \"La Sangre en(de) la Viña\" en la aldea de Barovia.",
 		image: "/characters/npcs/alenka_mirabel_and_sorvia.jpg"
+	},
+	{
+		name: "Madame Eva",
+		description: "Una anciana Vistani que vive en una carreta en el bosque de Barovia. Es una vidente que puede leer el futuro en las cartas del tarot.",
+		image: "/characters/npcs/madame_eva.jpg"
 	}
 ]
