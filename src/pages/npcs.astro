@@ -1,18 +1,34 @@
 ---
-import CharacterCard from '../components/CharacterCard.astro'
+import CharacterCard from "../components/CharacterCard.astro";
 import Layout from "../layouts/Layout.astro";
 
-import npcs from '../data/npcs';
+import { getCollection } from "astro:content";
+
+const npcs = await getCollection("npcs");
 ---
 
 <Layout>
-  <section
-    class="container mx-auto mt-2 p-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3"
-  >
-	{
-		npcs.map(npc => (
-			<CharacterCard name={npc.name} src={npc.image} description={npc.description} isDead={npc.isDead} isVampire={npc.isVampire} />
-		))
-	}
+  <section class="container mx-auto pb-4">
+    <h1 class="text-center text-3xl mt-6 mb-5">Personajes Secundarios</h1>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3"
+    >
+      {
+        npcs.map((npc) => {
+          const { data } = npc;
+          return (
+            <a href={`/npcs/${npc.slug}`}>
+              <CharacterCard
+                name={data.name}
+                src={data.image}
+                description={data.description}
+                isDead={data.status === "dead"}
+                isVampire={data.status === "vampire"}
+              />
+            </a>
+          );
+        })
+      }
+    </div>
   </section>
 </Layout>

@@ -1,17 +1,20 @@
 ---
+import { getCollection } from "astro:content";
 import CharacterCard from "../components/CharacterCard.astro";
 import Layout from "../layouts/Layout.astro";
 // PCs = Player Characters (cards)
+
+const pcs = await getCollection("pcs");
 ---
 
 <Layout>
-  <section
-    class="container lg:max-w-[920px] mx-auto mt-2 p-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3"
-  >
-    <CharacterCard name="Ayla Majere" src="/characters/players/ayla.png" />
-    <CharacterCard name="Diago" src="/characters/players/diago.jpg" />
-    <CharacterCard name="Ava Nescient" src="/characters/players/ava.jpg" />
-    <CharacterCard name="Pterox" src="/characters/players/pterox.jpg" />
-    <CharacterCard name="Rionak" src="/characters/players/rionak.webp" />
+  <section class="container max-w-[920px] mx-auto mt-4 px-3 pb-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-4">
+      {
+        pcs.map((pc) => (
+          <CharacterCard name={pc.data.name} src={pc.data.image} />
+        ))
+      }
+    </div>
   </section>
 </Layout>
