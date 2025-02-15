@@ -1,4 +1,4 @@
 ---
 name: Rionak
-image: /characters/players/rionak.webp
+image: /characters/players/rionak.jpg
 ---
